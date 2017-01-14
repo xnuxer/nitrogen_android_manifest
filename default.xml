@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+    <remote name="nos"
+        fetch="https://github.com/nitrogen-project"
+        sync-j="16"/>
+
+    <remote name="github"
+        fetch="https://github.com" />
+
+    <!--
+        Nitrogen OS by Nitrogen Project
+    -->
+    <project path="build" name="android_build" groups="pdk" remote="nos" revision="n2" >
+        <copyfile src="core/root.mk" dest="Makefile" />
+    </project>
+    <project path="build/kati" name="android_build_kati" remote="nos" revision="n2" />
+
+    <!-- Other -->
+    <project path="art" name="android_art" remote="nos" revision="n2" />
+    <project path="bionic" name="android_bionic" remote="nos" revision="n2" />
+    <project path="bootable/recovery" name="android_bootable_recovery" remote="nos" revision="n2" />
+
+    <!-- Frameworks -->
+    <project path="frameworks/av" name="android_frameworks_av" remote="nos" revision="n2" />
+    <project path="frameworks/base" name="android_frameworks_base" remote="nos" revision="n2" />
+    <project path="frameworks/native" name="android_frameworks_native" remote="nos" revision="n2" />
+    <project path="frameworks/support" name="android_frameworks_support" remote="nos" revision="n2" />
+
+    <!-- System -->
+    <project path="system/bt" name="android_system_bt" remote="nos" revision="n2" />
+    <project path="system/core" name="android_system_core" remote="nos" revision="n2" />
+    <project path="system/extras" name="android_system_extras" remote="nos" revision="n2" />
+    <project path="system/sepolicy" name="android_system_sepolicy" remote="nos" revision="n2" />
+    <project path="external/skia" name="android_external_skia" remote="nos" revision="n2" />
+    <project path="system/vold" name="android_system_vold" remote="nos" revision="n2" />
+
+    <!-- Packages -->
+    <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" remote="nos" revision="n2" />
+    <project path="packages/inputmethods/LatinIME" name="android_packages_inputmethods_LatinIME" remote="nos" revision="n2" />
+    <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="nos" revision="n2" />
+
+    <!-- Hardware -->
+    <project path="hardware/broadcom/wlan" name="android_hardware_broadcom_wlan" remote="nos" revision="n2" />
+    <project path="hardware/libhardware" name="android_hardware_libhardware" remote="nos" revision="n2" />
+    <project path="hardware/qcom/audio" name="android_hardware_qcom_audio" remote="nos" revision="n2" />
+    <project path="hardware/qcom/bt" name="android_hardware_qcom_bt" remote="nos" revision="n2" />
+    <project path="hardware/qcom/display" name="android_hardware_qcom_display" remote="nos" revision="n2" />
+    <project path="hardware/qcom/gps" name="android_hardware_qcom_gps" remote="nos" revision="n2" />
+    <project path="hardware/qcom/keymaster" name="android_hardware_qcom_keymaster" remote="nos" revision="n2" />
+    <project path="hardware/qcom/media" name="android_hardware_qcom_media" remote="nos" revision="n2" />
+    <project path="hardware/qcom/msm8x74" name="android_hardware_qcom_msm8x74" remote="nos" revision="n2" />
+
+    <!-- Apps -->
+    <project path="packages/apps/Bluetooth" name="android_packages_apps_Bluetooth" remote="nos" revision="n2" />
+    <project path="packages/apps/Browser" name="android_packages_apps_Browser" remote="nos" revision="n2" />
+    <project path="packages/apps/Calendar" name="android_packages_apps_Calendar" remote="nos" revision="n2" />
+    <project path="packages/apps/Camera2" name="android_packages_apps_Camera2" remote="nos" revision="n2" />
+    <project path="packages/apps/Contacts" name="android_packages_apps_Contacts" remote="nos" revision="n2" />
+    <project path="packages/apps/ContactsCommon" name="android_packages_apps_ContactsCommon" remote="nos" revision="n2" />
+    <project path="packages/apps/DaylightHeaderNitrogen" name="DaylightHeaderNitrogen" remote="nos" revision="n2" />
+    <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" remote="nos" revision="n2" />
+    <project path="packages/apps/DeskClock" name="android_packages_apps_DeskClock" remote="nos" revision="n2" />
+    <project path="packages/apps/DUI" name="android_packages_apps_DUI" remote="nos" revision="n2" />
+    <project path="packages/apps/Eleven" name="android_packages_apps_Eleven" remote="nos" revision="n2" />
+    <project path="packages/apps/Gallery2" name="android_packages_apps_Gallery2" remote="nos" revision="n2" />
+    <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="nos" revision="n2" />
+    <project path="packages/apps/LockClock" name="android_packages_apps_LockClock" remote="nos" revision="n2" />
+    <project path="packages/apps/masquerade" name="TeamSubstratum/masquerade" remote="github" revision="n" />
+    <project path="packages/apps/Messaging" name="android_packages_apps_Messaging" remote="nos" revision="n2" />
+    <project path="packages/apps/MusicFX" name="android_packages_apps_MusicFX" remote="nos" revision="n2" />
+    <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" remote="nos" revision="n2" />
+    <project path="packages/apps/NitrogenOTA" name="android_packages_apps_NitrogenOTA" remote="nos" revision="n2" />
+    <project path="packages/apps/NitrogenSettings" name="android_packages_apps_NitrogenSettings" remote="nos" revision="n2" />
+    <project path="packages/apps/NitrogenWallpapers" name="android_packages_apps_NitrogenWallpapers" remote="nos" revision="n2" />
+    <project path="packages/apps/PackageInstaller" name="android_packages_apps_PackageInstaller" remote="nos" revision="n2" />
+    <project path="packages/apps/PhoneCommon" name="android_packages_apps_PhoneCommon" remote="nos" revision="n2" />
+    <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="nos" revision="n2" />
+    <project path="packages/apps/Stk" name="android_packages_apps_Stk" remote="nos" revision="n2" />
+    <project path="packages/apps/Terminal" name="android_packages_apps_Terminal" remote="nos" revision="n2" />
+
+    <!-- External -->
+    <project path="external/android-snackbar" name="android_external_android-snackbar" remote="nos" revision="n2" />
+    <project path="external/busybox" name="android_external_busybox" remote="nos" revision="n2" />
+    <project path="external/DUtils" name="android_external_DUtils" remote="nos" revision="n2" />
+    <project path="external/exfat" name="android_external_exfat" remote="nos" revision="n2" />
+    <project path="external/fuse" name="android_external_fuse" remote="nos" revision="n2" />
+    <project path="external/google" name="android_external_google" remote="nos" revision="n2" />
+    <project path="external/ntfs-3g" name="android_external_ntfs-3g" remote="nos" revision="n2" />
+
+    <!-- Nitrogen OS Vendor -->
+    <project path="vendor/nitrogen" name="android_vendor_nitrogen" remote="nos" revision="n2" >
+        <linkfile src="builder.sh" dest="builder.sh" />
+    </project>
+
+    <!-- Device -->
+    <project path="device/lge/geehrc" name="android_device_lge_geehrc" remote="nos" revision="n2" />
+
+    <!-- Kernel -->
+    <project path="kernel/lge/geehrc" name="android_kernel_lge_geehrc" remote="nos" revision="n2" />
+
+    <!-- Blobs -->
+    <project path="vendor/lge/geehrc" name="android_vendor_lge_geehrc" remote="nos" revision="n2" />    
+</manifest>
